@@ -52,11 +52,11 @@ input[type="tel"] {
 
 }
 
-legend {
+fieldset>legend {
     display: block;
-    margin-bottom: 5px;
-    color: #ffffff;
 
+    color: #ffffff;
+    padding: 0;
 }
 
 fieldset {
@@ -64,15 +64,16 @@ fieldset {
     margin: 0 auto;
     padding: 0;
     width: 600px;
-        padding: 10px;
+    padding: 10px;
     border: 1px solid #ffffff;
     border-radius: 5px;
     text-align: center;
+    overflow: hidden;
 }
 
 @media only screen and (max-width: 700px) {
     fieldset {
-        max-width: 100%; 
+        max-width: 100%;
     }
 }
 
@@ -80,7 +81,7 @@ button {
     display: block;
     margin: 0 auto;
     min-width: 100px;
-    width: 625px; 
+    width: 625px;
     max-width: 700px;
     padding: 10px;
     background-color: #00b7ff;
@@ -94,7 +95,7 @@ button {
 
 @media only screen and (max-width: 700px) {
     button {
-        max-width: 100%; 
+        max-width: 100%;
     }
 }
 
