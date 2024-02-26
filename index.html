@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario increíble</title>
+    <meta name="description" content="Formulario de información increíble para Xurxo.">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main class="contenido-principal">
+        <form action="send.php" method="post">
+
+            <h1>Formulario de información increíble</h1>
+            <ul class="fields">
+                <li class="field">
+                    <label>
+                        Introduce tu nombre
+                        <input required placeholder="Federico" name="nombre" type="text">
+                    </label>
+                </li>
+
+                <li class="field">
+                    <label>
+                        Introduce tus apellidos
+                        <input required placeholder="Federiquez" name="apellidos" type="text">
+                    </label>
+                </li>
+
+                <li class="field">
+                    <label>
+                        Introduce tu edad
+                        <input placeholder="20" name="edad" type="number" min="0">
+                    </label>
+                </li>
+
+                <li class="field">
+                    <legend>Sexo</legend>
+                    <fieldset>
+                        
+
+                        <label>Masculino<input type="radio" name="sexo" value="masculino"> </label>
+                        <label>Femenino<input type="radio" name="sexo" value="femenino"> </label>
+                        <label>Otro<input type="radio" name="sexo" value="otro"> </label>
+
+                    </fieldset>
+                </li>
+
+                <li class="field">
+                    <label>
+                        Correo electrónico
+                        <input required placeholder="correo@gmail.com" name="email" type="email">
+                    </label>
+                </li>
+
+                <li class="field">
+                    <label>
+                        Teléfono de contacto
+                        <input pattern="[0-9]{3}[0-9]{3}[0-9]{3}" name="telefono" type="tel">
+                    </label>
+                </li>
+            </ul>
+
+            <button>Enviar</button>
+
+        </form>
+    </main>
+
+</body>
+
+</html>
